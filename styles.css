@@ -1,0 +1,84 @@
+:root {
+  --primary-color: ;
+  --primary-bg: #48cae4;
+  --secondary-color: #023e8a;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: auto;
+  border: 2px solid #eee;
+  padding: 1rem;
+  background-color: var(--primary-bg);
+  color: var(--secondary-color);
+}
+
+.heading {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.description {
+  margin-bottom: 0.5rem;
+}
+
+#next-btn,
+#check-btn {
+  cursor: pointer;
+  padding: 0.25rem 0.75rem;
+  background-color: var(--secondary-color);
+  border-radius: 4px;
+  color: var(--primary-bg);
+  outline: none;
+  border: none;
+}
+#next-btn {
+  margin-top: 0.45rem;
+}
+#bill-amount-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#bill-amount-div,
+#cash-given-div > * {
+  margin-bottom: 0.5rem;
+}
+#bill-amount,
+#cash-given {
+  width: 100%;
+  padding: 0.35rem 1rem;
+  margin-top: 0.5rem;
+}
+#cash-given {
+  margin-top: 0;
+}
+
+#cash-given-div {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+}
+
+.denominations {
+  display: block;
+  width: 100%;
+  margin-top: 0.35rem;
+}
+
+.denominations table,
+th,
+td {
+  padding: 0.2rem;
+  background-color: #eee;
+  width: 100%;
+}
