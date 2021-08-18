@@ -70,9 +70,13 @@
 }
 
 .denominations {
-  display: block;
+  display: none;
   width: 100%;
-  margin-top: 0.35rem;
+}
+
+.denominations caption {
+  margin-top: 0.65rem;
+  margin-bottom: 0.35rem;
 }
 
 .denominations table,
