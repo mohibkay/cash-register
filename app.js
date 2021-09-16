@@ -12,7 +12,6 @@ const notesArray = [2000, 500, 100, 20, 10, 5, 1];
 nextBtn.addEventListener("click", () => {
   hideError();
   const billAmountValue = Number(billAmount.value);
-  console.log("billAmountValue----------", billAmountValue);
   if (billAmountValue > 0) {
     nextBtn.style.display = "none";
     cashGivenDiv.style.display = "flex";
