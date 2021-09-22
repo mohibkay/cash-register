@@ -26,12 +26,14 @@ checkBtn.addEventListener("click", () => {
   const billAmountValue = Number(billAmount.value);
   const cashGivenValue = Number(cashGiven.value);
   if (cashGivenValue) {
-    if (cashGivenValue >= billAmountValue) {
+    if (cashGivenValue > billAmountValue) {
       const amountToReturn = cashGivenValue - billAmountValue;
       calculateChange(amountToReturn);
       denominationTable.style.display = "block";
-    } else {
+    } else if (cashGivenValue < billAmountValue) {
       showError("Cash is low. You'll have to do the dishes now.");
+    } else {
+      showError("No change to return");
     }
   } else {
     showError("Please enter cash");
